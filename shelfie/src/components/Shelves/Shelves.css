@@ -1,0 +1,4 @@
+#shelf-container {
+  display: flex;
+  flex-flow: column;
+}
