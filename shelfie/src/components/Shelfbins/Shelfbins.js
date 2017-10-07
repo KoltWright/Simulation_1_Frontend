@@ -37,7 +37,7 @@ class Shelfbins extends Component {
         {
           this.state.bins.map((val, index) => (
             <div key={val === null?this.getBinId(index) : val.shelf + val.bin}>
-              <Link to={val === null?"/bin/new/" + this.getBinId(index): "/bin/" + val.shelf + val.bin}>
+              <Link to={val === null?"/new/" + this.getBinId(index): "/bin/" + val.shelf + val.bin}>
                 <button>{val === null?"+ Add Item to Inventory" : "Bin " + val.bin}</button>
               </Link>
             </div>
